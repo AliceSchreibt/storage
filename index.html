@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Документы</title>
+
+  <style>
+
+    body {
+      margin: 0;
+      padding: 40px;
+      background: #f5f5f5;
+      font-family: "Century Gothic", sans-serif;
+      color: #111;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #666;
+      margin-bottom: 40px;
+      font-size: 18px;
+    }
+
+    .docs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .doc-card {
+      background: white;
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .doc-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+
+    .doc-title {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .doc-description {
+      color: #666;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .doc-link {
+      display: inline-block;
+      padding: 12px 18px;
+      background: black;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .doc-link:hover {
+      background: #333;
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      color: #777;
+      font-size: 14px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Документы</h1>
+
+    <div class="subtitle">
+      Хранилище PDF и технической документации
+    </div>
+
+    <div class="docs-grid">
+
+      <div class="doc-card">
+        <div class="doc-title">
+          Руководство двигателя
+        </div>
+
+        <div class="doc-description">
+          Техническое описание и параметры двигателя.
+        </div>
+
+        <a class="doc-link"
+           href="/public/docs/engine-guide.PDF"
+           target="_blank">
+          Открыть PDF
+        </a>
+      </div>
+
+      <div class="doc-card">
+        <div class="doc-title">
+          Электрическая схема
+        </div>
+
+        <div class="doc-description">
+          Схемы подключения и спецификации.
+        </div>
+
+        <a class="doc-link"
+           href="/public/docs/electrical.PDF"
+           target="_blank">
+          Открыть PDF
+        </a>
+      </div>
+
+      <div class="doc-card">
+        <div class="doc-title">
+          Инструкция по испытаниям
+        </div>
+
+        <div class="doc-description">
+          Методика тестирования оборудования.
+        </div>
+
+        <a class="doc-link"
+           href="/public/docs/testing.PDF"
+           target="_blank">
+          Открыть PDF
+        </a>
+      </div>
+
+    </div>
+
+    <footer>
+      Cloudflare Pages • GitHub • AppFlowy
+    </footer>
+
+  </div>
+
+</body>
+</html>
